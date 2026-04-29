@@ -10,7 +10,11 @@ public class Primo {
 		
 		Primo app = new Primo();
 		app.saludar();
-		app.esPrimo();
+		if (app.esPrimo()) {
+			System.out.println("El número es primo.");
+		} else {
+			System.out.println("El número no es primo.");
+		}
 		
 	}
 
@@ -22,9 +26,7 @@ public class Primo {
 		
 		System.out.print("Introduce un número para averiguar si es primo o no: ");
 		int primo = Integer.parseInt(sc.nextLine());
-		
-		
-		
+		// Aquí se realiza la formula para saber si el número es primo o no.
 		return false;
 	}
 	
